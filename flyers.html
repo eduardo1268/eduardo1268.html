@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinde tus Viáticos de Manera Fácil | Vixora</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #878787; /* Changed for better PDF background consistency */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .flyer-container {
+            background-color: #878787; /* Main content background remains white */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            padding: 30px;
+            animation: fadeIn 1.5s ease-out; /* Adjusted duration for smoother intro */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .header-section {
+            background-color: #D2007F; /* Vixora Pink */
+            color: #878787;
+            padding: 25px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-section h1 {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: bounceIn 1.5s ease-out;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+        .header-section h2 {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 400;
+        }
+        .key-points-section {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        .key-points-section h3 {
+            font-size: 1.5rem; /* text-2xl */
+            font-weight: 600; /* font-semibold */
+            color: #333333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .key-point-item {
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #D2007F; /* Accent border */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .key-point-item:hover {
+            transform: translateY(-5px);
+        }
+        .key-point-item strong {
+            color: #D2007F;
+        }
+        .key-point-item ul {
+            list-style-type: none;
+            padding-left: 10px;
+            margin-top: 5px;
+        }
+        .key-point-item ul li {
+            margin-bottom: 5px;
+            color: #555555; /* Adjusted color for readability */
+        }
+        .key-point-item ul li strong {
+            color: #333333;
+        }
+        .important-note {
+            background-color: #F6F6F6; /* Light orange for warning */
+            color: #D2007F; /* Darker orange text */
+            padding: 20px;
+            border-radius: 15px;
+            font-weight: 600;
+            margin-top: 30px;
+            border: 2px solid #D2007F;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(233, 30, 99, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .header-section h1 {
+                font-size: 1.75rem; /* text-3xl */
+            }
+            .header-section h2 {
+                font-size: 1rem; /* text-lg */
+            }
+            .key-points-section h3 {
+                font-size: 1.25rem; /* text-xl */
+            }
+            .flyer-container {
+                padding: 20px;
+                border-radius: 15px;
+            }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-5" style="background-color: #878787;">
+
+    <div class="flyer-container">
+        <!-- Header Section -->
+        <div class="header-section">
+            <h1 class="text-white text-4xl font-bold mb-1">¡Rinde tus Viáticos de Manera Fácil!</h1>
+            <!-- Removed the h2 tag for "Guía Rápida para Operaciones Vixora" -->
+        </div>
+
+        <!-- Key Points Section -->
+        <div class="key-points-section">
+            <!-- Removed the h3 tag "Puntos Clave para una Rendición Exitosa:" -->
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">Plantilla Única</p>
+                <!-- Added hyperlink to the template -->
+                <p class="text-gray-700">Utiliza siempre la <a href="https://docs.google.com/spreadsheets/d/1BWUJYZ5KA8tACR_DTO2xOsK1coryg6vhBU-YAz5Klus/edit?gid=323102082#gid=323102082" target="_blank" class="text-blue-600 hover:underline">plantilla de rendición de viáticos proporcionada por Vixora</a>.</p>
+            </div>
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">Fechas Claras</p>
+                <ul class="list-none pl-0 space-y-1">
+                    <li><strong>Fecha de Inicio:</strong> Primera factura del periodo de viaje.</li>
+                    <li><strong>Fecha de Fin:</strong> Última factura del periodo de viaje.</li>
+                    <li><strong>Formato:</strong> <code class="bg-gray-200 p-1 rounded">dd.mm.aaaa</code></li>
+                </ul>
+            </div>
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">Información Esencial</p>
+                <ul class="list-none pl-0 space-y-1">
+                    <li><strong>N° VIAJE ANTICIPO:</strong> Proporcionado por correo (si aplica, si no, dejar en blanco).</li>
+                    <li><strong>OT:</strong> Incluir la Orden de Trabajo del proyecto (si aplica).</li>
+                    <li><strong>CONCEPTO:</strong> Seleccionar únicamente: MOVILIDAD, HOSPEDAJE, ALIMENTACIÓN.</li>
+                    <li><strong>MOTIVO:</strong> Indicar el motivo del viático/anticipo.</li>
+                </ul>
+            </div>
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">Documentos y Valores</p>
+                <ul class="list-none pl-0 space-y-1">
+                    <li><strong>TIPO DOC:</strong> <code class="bg-gray-200 p-1 rounded">01</code> para Factura, <code class="bg-gray-200 p-1 rounded">00</code> para otros comprobantes.</li>
+                    <li><strong>DOCUMENTO:</strong> <code class="bg-gray-200 p-1 rounded">FACTURA</code> o <code class="bg-gray-200 p-1 rounded">PLANILLA SS</code>.</li>
+                    <li><strong>VALOR VENTA:</strong> Importe SIN IGV.</li>
+                    <li><strong>IGV:</strong> Indicar el valor del IGV de la factura.</li>
+                    <li>
+                        <strong>IMP:</strong> De acuerdo al IGV (<code class="bg-gray-200 p-1 rounded">"C0"</code>, <code class="bg-gray-200 p-1 rounded">"C1"</code>, <code class="bg-gray-200 p-1 rounded">"C4"</code>, <code class="bg-gray-200 p-1 rounded">"C9"</code>)
+                        <ul class="list-disc ml-6 mt-2">
+                            <li><code class="bg-gray-200 p-1 rounded">C0</code>: 0% IGV adquisición No Gravadas - Nacional (Cuando documento no tiene IGV como boletas o no tiene documento fiscal)</li>
+                            <li><code class="bg-gray-200 p-1 rounded">C1</code>: 18% IGV adquisiciones gravadas Op Gravadas/Export/Facturas que tienen IGV 18%</li>
+                            <li><code class="bg-gray-200 p-1 rounded">C4</code>: 0% Exonerado de IGV - Importaciones (Documentos del exterior)</li>
+                            <li><code class="bg-gray-200 p-1 rounded">C9</code>: 10% IGV Adq gravadas OP Gravadas/Export MYPES (Facturas de MYPES)</li>
+                        </ul>
+                    </li>
+                    <li><strong>MONTO NO AFECTO:</strong> Dejar en blanco (a menos que apliquen RC u otros valores sin IGV).</li>
+                </ul>
+            </div>
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">Código SAP</p>
+                <p class="text-gray-700">Se selecciona por defecto al escoger el Concepto.</p>
+            </div>
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">N° de Documento (Estructura Crucial)</p>
+                <ul class="list-none pl-0 space-y-1">
+                    <li><strong>Factura (Tipo 01):</strong> <code class="bg-gray-200 p-1 rounded">01-FXXXX-XXXXXXX</code> (Ej: <code class="bg-gray-200 p-1 rounded">01-F085-00103458</code>)</li>
+                    <li><strong>Otros Comprobantes (Tipo 00):</strong> <code class="bg-gray-200 p-1 rounded">00-N° VIAJE-N° correlativo</code> (Ej: <code class="bg-gray-200 p-1 rounded">00-6500000001-1</code>)</li>
+                    <li><strong>Rendición Anticipada (sin viático):</strong> <code class="bg-gray-200 p-1 rounded">00-N° empleado-N° correlativo</code> (Ej: <code class="bg-gray-200 p-1 rounded">00-20401-01</code>)</li>
+                </ul>
+            </div>
+
+            <div class="key-point-item">
+                <p class="font-bold text-lg text-pink-700 mb-2">Otros Detalles Importantes</p>
+                <ul class="list-none pl-0 space-y-1">
+                    <li><strong>PAÍS:</strong> <code class="bg-gray-200 p-1 rounded">PE</code> (Perú) para comprobantes nacionales.</li>
+                    <li><strong>MOTIVO 2 y 3 (Solo Transporte):</strong> Inicio y fin de trayecto.</li>
+                    <li><strong>RUC:</strong> Colocar RUC de la factura; para otros comprobantes, usar RUC de Vixora (<code class="bg-gray-200 p-1 rounded">20551526594</code>).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Important Note Section -->
+        <div class="important-note">
+            <p class="text-xl font-bold mb-2">¡MUY IMPORTANTE!</p>
+            <ul class="list-none pl-0 space-y-1 text-base">
+                <li>Completar **todos** los campos del formato.</li>
+                <li>La fecha de la rendición abarca desde la primera hasta la última factura.</li>
+                <li>**Revisa bien** la estructura del N° de Documento según el tipo.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
